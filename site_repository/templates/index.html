@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portifolio</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Meu portifolio loko</h1>
+
+    <h3>Bem loko</h3>
+    {% for item in conhecimentos %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    <ul>
+        <li>Git</li>
+        <li>Python</li>
+        <li>CSS</li>
+        <li>HTML</li>
+    </ul>
+    <ul>
+        <li>City:SP-São Paulo</li>
+        <li>Country: BR</li>
+        <li>Planet: Mars</li>
+    </ul>
+</body>
+</html>
